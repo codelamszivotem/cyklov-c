@@ -1,0 +1,36 @@
+﻿<Window x:Class="Ciklokolonial.NewOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ciklokolonial"
+        mc:Ignorable="d"
+        Title="NewOrderWindow" Height="527" Width="790">
+    <Grid>
+        <StackPanel>
+            <Image Source="/Images/Bicycle.png"></Image>
+        </StackPanel>
+
+
+        <ComboBox Name="comboBox1" SelectedIndex="0"  Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="30" Height="48" Width="174" Margin="177,57,0,0" >
+            <ComboBoxItem>Sedadlo 1</ComboBoxItem>
+            <ComboBoxItem>Sedadlo 2</ComboBoxItem>
+            <ComboBoxItem>Sedadlo 3</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="comboBox2" SelectedIndex="0"  Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="30" Height="48" Width="206" Margin="558,161,0,0" >
+            <ComboBoxItem>Kolo 17 - 18"</ComboBoxItem>
+            <ComboBoxItem>Kolo 18 - 20"</ComboBoxItem>
+            <ComboBoxItem>Kolo 19 - 21"</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="comboBox3" SelectedIndex="0"  Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="30" Height="48" Width="197" Margin="49,185,0,0" >
+            <ComboBoxItem>S blatníkem</ComboBoxItem>
+            <ComboBoxItem>BEZ blatníku</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="comboBox4" SelectedIndex="0"  Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="30" Height="48" Width="129" Margin="317,256,0,0" >
+            <ComboBoxItem>černá</ComboBoxItem>
+            <ComboBoxItem>bílá</ComboBoxItem>
+            <ComboBoxItem>růžová</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Send order" FontSize="40" Margin="575,436,0,0" Click="Button_Click"></Button>
+    </Grid>
+</Window>
